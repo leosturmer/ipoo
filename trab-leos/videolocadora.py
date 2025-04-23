@@ -67,7 +67,9 @@ def alugar_filme():
     a_locadora.validar(um_cliente)
     filmes_disponiveis = a_locadora.mostrar_filmes_da_prateleira()
     um_cliente.escolher(filmes_disponiveis)
-    um_funcionario.receber_filmes_
+    um_funcionario.receber_filmes(um_cliente.filmes_escolhidos)
+    a_locadora.preencher_registros_de_aluguel(um_funcionario.filmes_para_alugar)
+
 
 
 
